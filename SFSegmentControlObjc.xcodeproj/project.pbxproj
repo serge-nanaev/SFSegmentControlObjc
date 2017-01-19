@@ -35,8 +35,8 @@
 		339756091E2FB7D0007C8FFB /* SFSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFSegmentControl.m; path = SFSegmentControl/SFSegmentControl.m; sourceTree = "<group>"; };
 		3397560B1E2FB806007C8FFB /* SFSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFSegmentView.h; path = SFSegmentControl/SFSegmentView.h; sourceTree = "<group>"; };
 		3397560C1E2FB806007C8FFB /* SFSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFSegmentView.m; path = SFSegmentControl/SFSegmentView.m; sourceTree = "<group>"; };
-		3397560E1E2FB818007C8FFB /* SFSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSelectorView.h; sourceTree = "<group>"; };
-		3397560F1E2FB818007C8FFB /* SFSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSelectorView.m; sourceTree = "<group>"; };
+		3397560E1E2FB818007C8FFB /* SFSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFSelectorView.h; path = SFSegmentControl/SFSelectorView.h; sourceTree = "<group>"; };
+		3397560F1E2FB818007C8FFB /* SFSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFSelectorView.m; path = SFSegmentControl/SFSelectorView.m; sourceTree = "<group>"; };
 		339756151E2FBBD7007C8FFB /* SFSegmentControlDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFSegmentControlDelegate.h; path = SFSegmentControl/SFSegmentControlDelegate.h; sourceTree = "<group>"; };
 		339756181E30A471007C8FFB /* SFSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFSegment.m; path = SFSegmentControl/SFSegment.m; sourceTree = "<group>"; };
 		3397561A1E30A494007C8FFB /* SFSegment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SFSegment.h; path = SFSegmentControl/SFSegment.h; sourceTree = "<group>"; };
