@@ -21,7 +21,6 @@ IB_DESIGNABLE
 @property (nonatomic        ) NSUInteger        selectedIndex;
 //@property (strong, nonatomic) UIView            *view;
 
-- (void)setup;
 - (void)setupContainer;
 - (void)generateSegmentViews;
 - (void)addInitialData;
@@ -41,7 +40,7 @@ IB_DESIGNABLE
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setup];
+        [self initialSetup];
     }
     return self;
 }
@@ -49,7 +48,7 @@ IB_DESIGNABLE
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
-        [self setup];
+        [self initialSetup];
     }
     return self;
 }
@@ -153,17 +152,13 @@ IB_DESIGNABLE
 
 #pragma mark Interface setup
 
-- (void)setup {
-    [self initialSetup];
+- (void)initialSetup {
+    self.selectorView = [[SFSelectorView alloc] init];
+    self.segmentsViews = [[NSMutableArray alloc] init];
+    self.selectedIndex = 0;
     [self addInitialData];
     [self generateSegmentViews];
     [self addGestures];
-}
-
-- (void)initialSetup {
-    self.selectedIndex = 0;
-    self.selectorView = [[SFSelectorView alloc] init];
-    self.segmentsViews = [[NSMutableArray alloc] init];
 }
 
 - (void)setupContainer {
@@ -243,6 +238,5 @@ IB_DESIGNABLE
     
     return index;
 }
-
 
 @end
