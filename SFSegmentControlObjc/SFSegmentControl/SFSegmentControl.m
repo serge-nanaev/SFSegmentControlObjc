@@ -19,7 +19,6 @@ IB_DESIGNABLE
 @property (strong, nonatomic) SFSelectorView    *selectorView;
 @property (strong, nonatomic) NSMutableArray    <SFSegment*> *segments;
 @property (nonatomic        ) NSUInteger        selectedIndex;
-//@property (strong, nonatomic) UIView            *view;
 
 - (void)setupContainer;
 - (void)generateSegmentViews;
@@ -74,7 +73,7 @@ IB_DESIGNABLE
 
 - (void)setContainerBackgroundColor:(UIColor *)containerBackgroundColor {
     _containerBackgroundColor = containerBackgroundColor;
-    [self setBackgroundColor:containerBackgroundColor];
+    [self setupContainer];
 }
 
 - (void)setContainerBorderColor:(UIColor *)containerBorderColor {
@@ -82,7 +81,7 @@ IB_DESIGNABLE
     [self setupContainer];
 }
 
-- (void)setContainerBorderWidth:(CGFloat *)containerBorderWidth {
+- (void)setContainerBorderWidth:(CGFloat)containerBorderWidth {
     _containerBorderWidth = containerBorderWidth;
     [self setupContainer];
 }
@@ -156,6 +155,7 @@ IB_DESIGNABLE
     self.selectorView = [[SFSelectorView alloc] init];
     self.segmentsViews = [[NSMutableArray alloc] init];
     self.selectedIndex = 0;
+    self.containerBorderWidth = 0;
     [self addInitialData];
     [self generateSegmentViews];
     [self addGestures];
@@ -165,7 +165,7 @@ IB_DESIGNABLE
     self.backgroundColor = self.containerBackgroundColor;
     self.layer.cornerRadius = self.frame.size.height / 2;
     self.layer.borderColor = self.containerBorderColor.CGColor;
-    self.layer.borderWidth = 0;
+    self.layer.borderWidth = self.containerBorderWidth;
 }
 
 - (void)generateSegmentViews {

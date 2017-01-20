@@ -19,7 +19,7 @@ IB_DESIGNABLE
 @property (nonatomic) IBInspectable UIColor     *containerBackgroundColor;
 @property (nonatomic) IBInspectable UIColor     *containerBorderColor;
 
-@property (nonatomic) IBInspectable CGFloat     *containerBorderWidth;
+@property (nonatomic) IBInspectable CGFloat     containerBorderWidth;
 @property (nonatomic)               UIFont      *font;
 
 @property (nonatomic, weak) IBOutlet id <SFSegmentControlDelegate> delegate;
